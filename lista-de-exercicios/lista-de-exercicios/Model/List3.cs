@@ -84,17 +84,48 @@ namespace lista_de_exercicios.Model
 
         private void Exercice3()
         {
-            throw new NotImplementedException();
-        }
+            int hora = 7;
 
-        private void Exercice4()
+            while (hora < 18)
+            {
+                Console.WriteLine("Agora são " + hora + " horas");
+                hora++;
+            }
+            Console.WriteLine("Fim do expediente");
+
+        }
+        private class Pizza
         {
-            throw new NotImplementedException();
+           public string Sabor { get; set; }
+           public string Valor { get; set; }
+        }
+        private void Exercice4()
+        {   
+            List<Pizza> cardapioPizzas = new List<Pizza>();
+
+            for (int i = 1; i <= 10; i++)
+            {
+                string sabor = "Pizza" + i;
+                string valor = "R$" + i + ",00";
+                cardapioPizzas.Add(new Pizza { Sabor = sabor, Valor = valor });
+            }
+
+            foreach (var pizza in cardapioPizzas)
+            {
+                Console.WriteLine("Pizza " + pizza.Sabor + " - " + pizza.Valor);
+            }
         }
 
         private void Exercice5()
         {
-            throw new NotImplementedException();
+            int tempoParaLancamentoDoFoguete = 1000;
+
+            while (tempoParaLancamentoDoFoguete>0)
+            {
+                tempoParaLancamentoDoFoguete--;
+            }
+            Console.WriteLine("FOGO!");
         }
+
     }
 }
