@@ -1,0 +1,8 @@
+C:\Users\felip\OneDrive\Documentos\Github\CSharp-para-iniciantes-2023-Crie-4-projetos\lista-de-exercicios\lista-de-exercicios\bin\Debug\lista-de-exercicios.exe.config
+C:\Users\felip\OneDrive\Documentos\Github\CSharp-para-iniciantes-2023-Crie-4-projetos\lista-de-exercicios\lista-de-exercicios\bin\Debug\lista-de-exercicios.exe
+C:\Users\felip\OneDrive\Documentos\Github\CSharp-para-iniciantes-2023-Crie-4-projetos\lista-de-exercicios\lista-de-exercicios\bin\Debug\lista-de-exercicios.pdb
+C:\Users\felip\OneDrive\Documentos\Github\CSharp-para-iniciantes-2023-Crie-4-projetos\lista-de-exercicios\lista-de-exercicios\obj\Debug\lista-de-exercicios.csproj.AssemblyReference.cache
+C:\Users\felip\OneDrive\Documentos\Github\CSharp-para-iniciantes-2023-Crie-4-projetos\lista-de-exercicios\lista-de-exercicios\obj\Debug\lista-de-exercicios.csproj.SuggestedBindingRedirects.cache
+C:\Users\felip\OneDrive\Documentos\Github\CSharp-para-iniciantes-2023-Crie-4-projetos\lista-de-exercicios\lista-de-exercicios\obj\Debug\lista-de-exercicios.csproj.CoreCompileInputs.cache
+C:\Users\felip\OneDrive\Documentos\Github\CSharp-para-iniciantes-2023-Crie-4-projetos\lista-de-exercicios\lista-de-exercicios\obj\Debug\lista-de-exercicios.exe
+C:\Users\felip\OneDrive\Documentos\Github\CSharp-para-iniciantes-2023-Crie-4-projetos\lista-de-exercicios\lista-de-exercicios\obj\Debug\lista-de-exercicios.pdb
