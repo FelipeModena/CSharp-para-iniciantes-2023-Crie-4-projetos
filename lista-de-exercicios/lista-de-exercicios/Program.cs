@@ -2,6 +2,7 @@
 using lista_de_exercicios.Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace lista_de_exercicios
         {
             int option;
             List<String> listsSelected = new List<String>();
+
             Console.WriteLine("Escolha o número da lista de exercícios que deseja executar: ");
             Console.WriteLine("1 - Lista de exercícios 1");
             Console.WriteLine("2 - Lista de exercícios 2");

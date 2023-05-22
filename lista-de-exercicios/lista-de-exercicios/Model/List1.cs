@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lista_de_exercicios.Lists
 {
-    internal class List1 : Interface.List
+    internal class List1 : Interface.IList
     {
         public int Menu()
         {

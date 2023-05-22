@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\List.cs" />
+    <Compile Include="Interface\Project.cs" />
     <Compile Include="Model\List1.cs" />
     <Compile Include="Model\List2.cs" />
     <Compile Include="Model\List3.cs" />
+    <Compile Include="Model\Project01.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

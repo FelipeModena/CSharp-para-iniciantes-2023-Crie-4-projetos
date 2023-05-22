@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace lista_de_exercicios.Interface
 {
-    internal interface IList
+    internal interface IProject
     {
         int Menu();
     }
+
+    internal interface IProject1 : IProject
+    {
+        void Soma();
+        void Subtrai();
+        void Multiplica();
+        void Divide();
+
+    }
+    
+
+
 }

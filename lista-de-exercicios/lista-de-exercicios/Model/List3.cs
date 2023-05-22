@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace lista_de_exercicios.Model
 {
-    internal class List3 : Interface.List
+    internal class List3 : Interface.IList
     {
         public int Menu()
         {
             int option;
-            //choose betwwen exercises
             Console.WriteLine("Escolha o número do exercício que deseja executar: ");
             Console.WriteLine("1 - Exercício 1");
             Console.WriteLine("\n");
