@@ -16,31 +16,37 @@ namespace lista_de_exercicios
         static void Main(string[] args)
         {
             int option;
-            //choose betwwen lists of exercises
+            List<String> listsSelected = new List<String>();
             Console.WriteLine("Escolha o número da lista de exercícios que deseja executar: ");
             Console.WriteLine("1 - Lista de exercícios 1");
             Console.WriteLine("2 - Lista de exercícios 2");
+            Console.WriteLine("3 - Lista de exercícios 3");
 
 
             Console.WriteLine("Digite o número da lista de exercícios: ");
             option = int.Parse(Console.ReadLine());
             Console.WriteLine("\n\n ");
 
-            switch (option)
-            {
-                case 1:
-                    list1.Menu();
-                    break;
-                case 2:
-                    list2.Menu();
-                    break;
-                case 3:
-                    list3.Menu();
-                    break;
-                default:
-                    Console.WriteLine("Opção inválida!");
-                    break;
-            }
+            listsSelected.Add(option.ToString());
+
+     
+                switch (option)
+                {
+
+                    case 1:
+                        list1.Menu();
+                        break;
+                    case 2:
+                        list2.Menu();
+                        break;
+                    case 3:
+                        list3.Menu();
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida!");
+                        listsSelected.RemoveAt(listsSelected.Count - 1);
+                        break;
+                }
         }
     }
 }

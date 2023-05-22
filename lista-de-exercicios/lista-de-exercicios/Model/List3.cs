@@ -43,14 +43,43 @@ namespace lista_de_exercicios.Model
             }
         }
 
+        private class Aluno
+        {
+            public string Name { get; set; }
+        }
         private void Exercice1()
         {
-            throw new NotImplementedException();
+            List<Aluno> novosAlunos = new List<Aluno>();
+
+            criaNovosAlunos(novosAlunos);
+            imprimeAlunos(novosAlunos);
+        }
+
+        private static void imprimeAlunos(List<Aluno> novosAlunos)
+        {
+            foreach (var aluno in novosAlunos)
+            {
+                Console.WriteLine("Bem vindo Aluno " + aluno.Name);
+            }
+        }
+
+        private static void criaNovosAlunos(List<Aluno> novosAlunos)
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                string name = "Aluno" + i;
+                novosAlunos.Add(new Aluno { Name = name });
+            }
         }
 
         private void Exercice2()
         {
-            throw new NotImplementedException();
+            int velocidadeMaxima = 200;
+            while (velocidadeMaxima>0)
+            {
+                velocidadeMaxima--;       
+            }
+            Console.WriteLine("Velocidade Máxima atingida: ");
         }
 
         private void Exercice3()

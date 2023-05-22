@@ -46,14 +46,13 @@
     <Compile Include="Interface\List.cs" />
     <Compile Include="Model\List1.cs" />
     <Compile Include="Model\List2.cs" />
+    <Compile Include="Model\List3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
