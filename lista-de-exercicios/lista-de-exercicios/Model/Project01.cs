@@ -16,20 +16,23 @@ namespace lista_de_exercicios.Model
             {
                 printMenuOptions();
                 option = int.Parse(Console.ReadLine());
-                Console.WriteLine(option == 1);
 
                 switch (option)
                 {
                     case 1:
+                        Console.WriteLine("Soma");
                         Soma();
                         break;
                     case 2:
+                        Console.WriteLine("Subtrai");
                         Subtrai();
                         break;
                     case 3:
+                        Console.WriteLine("Multiplica");
                         Multiplica();
                         break;
                     case 4:
+                        Console.WriteLine("Divide");
                         Divide();
                         break;
                     default:
@@ -52,33 +55,33 @@ namespace lista_de_exercicios.Model
 
         public void Soma()
         {
-           int num1, num2, result;
+            double num1, num2, result;
             Console.WriteLine("Digite o primeiro número: ");
-            num1 = int.Parse(Console.ReadLine());
+            num1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo número: ");
-            num2 = int.Parse(Console.ReadLine());
+            num2 = double.Parse(Console.ReadLine());
             result = num1 + num2;
             Console.WriteLine("O resultado da soma é: " + result);
         }
 
         public void Subtrai()
         {
-            int num1, num2, result;
+            double num1, num2, result;
             Console.WriteLine("Digite o primeiro número: ");
-            num1 = int.Parse(Console.ReadLine());
+            num1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo número: ");
-            num2 = int.Parse(Console.ReadLine());
+            num2 = double.Parse(Console.ReadLine());
             result = num1 - num2;
             Console.WriteLine("O resultado da soma é: " + result);
 
         }
         public void Divide()
         {
-            int num1, num2, result;
+            double num1, num2, result;
             Console.WriteLine("Digite o primeiro número: ");
             num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo número: ");
-            num2 = int.Parse(Console.ReadLine());
+            num2 = double.Parse(Console.ReadLine());
             result = num1 / num2;
             Console.WriteLine("O resultado da soma é: " + result);
         }
@@ -86,11 +89,11 @@ namespace lista_de_exercicios.Model
 
         public void Multiplica()
         {
-            int num1, num2, result;
+            double num1, num2, result;
             Console.WriteLine("Digite o primeiro número: ");
             num1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo número: ");
-            num2 = int.Parse(Console.ReadLine());
+            num2 = double.Parse(Console.ReadLine());
             result = num1 * num2;
             Console.WriteLine("O resultado da soma é: " + result);
         }
