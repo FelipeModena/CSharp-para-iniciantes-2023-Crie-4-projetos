@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static lista_de_exercicios.Entity.List.List2Entity;
 
 namespace lista_de_exercicios.Lists
 {
@@ -56,11 +57,7 @@ namespace lista_de_exercicios.Lists
             }
         }
 
-        public class Item
-        {
-            public string Name { get; set; }
-            public double Value { get; set; }
-        }
+
         private List<Item>  PrecoFinal(List<Item> itens)
         {
             foreach (var item in itens)

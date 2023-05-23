@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\List\List2Entity.cs" />
+    <Compile Include="Entity\List\List3Entity.cs" />
+    <Compile Include="Entity\List\List1Entity.cs" />
+    <Compile Include="Entity\Project\Project02Entity.cs" />
     <Compile Include="Interface\IList.cs" />
     <Compile Include="Interface\IProject.cs" />
     <Compile Include="Model\List\List1.cs" />

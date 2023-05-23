@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static lista_de_exercicios.Entity.List.List2Entity;
+using static lista_de_exercicios.Entity.List.List3Entity;
 
 namespace lista_de_exercicios.Model
 {
@@ -42,10 +44,6 @@ namespace lista_de_exercicios.Model
             }
         }
 
-        private class Aluno
-        {
-            public string Name { get; set; }
-        }
         private void Exercice1()
         {
             List<Aluno> novosAlunos = new List<Aluno>();
