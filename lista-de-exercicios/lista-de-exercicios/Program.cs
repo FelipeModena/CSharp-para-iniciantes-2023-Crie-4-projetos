@@ -1,5 +1,6 @@
 ﻿using lista_de_exercicios.Lists;
 using lista_de_exercicios.Model;
+using lista_de_exercicios.Model.Project;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -39,12 +40,17 @@ namespace lista_de_exercicios
 
             Console.WriteLine("Escolha o número do projeto que deseja executar: ");
             Console.WriteLine("1 - Projeto 1: Calculadora");
+            Console.WriteLine("2 - Projeto 2: Gestor de clientes CMD");
 
             switch (int.Parse(Console.ReadLine()))
             {
                 case 1:
                     Project01 project01 = new Project01();
                     project01.Menu();
+                    break;
+                case 2:
+                    Project02 project02 = new Project02();
+                    project02.Menu();
                     break;
                 default:
                     break;

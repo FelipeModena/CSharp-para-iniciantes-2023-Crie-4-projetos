@@ -45,10 +45,11 @@
   <ItemGroup>
     <Compile Include="Interface\IList.cs" />
     <Compile Include="Interface\IProject.cs" />
-    <Compile Include="Model\List1.cs" />
-    <Compile Include="Model\List2.cs" />
-    <Compile Include="Model\List3.cs" />
-    <Compile Include="Model\Project01.cs" />
+    <Compile Include="Model\List\List1.cs" />
+    <Compile Include="Model\List\List2.cs" />
+    <Compile Include="Model\List\List3.cs" />
+    <Compile Include="Model\Project\Project01.cs" />
+    <Compile Include="Model\Project\Project02.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

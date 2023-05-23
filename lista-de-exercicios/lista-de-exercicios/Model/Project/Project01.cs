@@ -91,7 +91,7 @@ namespace lista_de_exercicios.Model
         {
             double num1, num2, result;
             Console.WriteLine("Digite o primeiro número: ");
-            num1 = int.Parse(Console.ReadLine());
+            num1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo número: ");
             num2 = double.Parse(Console.ReadLine());
             result = num1 * num2;
