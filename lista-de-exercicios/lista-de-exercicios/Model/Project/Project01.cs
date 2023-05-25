@@ -8,42 +8,52 @@ namespace lista_de_exercicios.Model
 {
     internal class Project01 : Interface.IProject1
     {
+        enum opcoesMenu
+        {
+            Soma = 1,
+            Subtrai = 2,
+            Multiplica = 3,
+            Divide = 4,
+            Sair = 5
+        }
         public int Menu()
         {
-            int option;
 
-            do
+            int option = -1;
+
+            while (option != 0)
             {
-                printMenuOptions();
+                PrintMenuOptions();
+
                 option = int.Parse(Console.ReadLine());
 
                 switch (option)
                 {
-                    case 1:
-                        Console.WriteLine("Soma");
+                    case (int)opcoesMenu.Soma:
                         Soma();
                         break;
-                    case 2:
-                        Console.WriteLine("Subtrai");
+                    case (int)opcoesMenu.Subtrai:
                         Subtrai();
                         break;
-                    case 3:
-                        Console.WriteLine("Multiplica");
+                    case (int)opcoesMenu.Multiplica:
                         Multiplica();
                         break;
-                    case 4:
-                        Console.WriteLine("Divide");
+                    case (int)opcoesMenu.Divide:
                         Divide();
                         break;
+                    case (int)opcoesMenu.Sair:
+                        return option;
                     default:
+                        Console.WriteLine("Opção inválida!");
                         break;
                 }
-            } while (option != 0);
+
+            }
 
             return option;
         }
 
-        private static void printMenuOptions()
+        public void PrintMenuOptions()
         {
             Console.WriteLine("Escolha a operação que deseja realizar: ");
 
@@ -51,6 +61,7 @@ namespace lista_de_exercicios.Model
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Multiplicação");
             Console.WriteLine("4 - Divisão");
+            Console.WriteLine("5 - Sair");
         }
 
         public void Soma()
@@ -97,5 +108,8 @@ namespace lista_de_exercicios.Model
             result = num1 * num2;
             Console.WriteLine("O resultado da soma é: " + result);
         }
+
+
+
     }
 }

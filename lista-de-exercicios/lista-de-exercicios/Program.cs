@@ -13,25 +13,47 @@ namespace lista_de_exercicios
 {
     internal class Program
     {
-        
+        enum opcoesMenu
+        {
+            Projeto = 1,
+            ListaDeExercicios = 2,
+            Sair = 3
+        }
         static void Main(string[] args)
         {
+            int option;
+            while (true)
+            {
+                
+                PrintMenu();
+                option = int.Parse(Console.ReadLine());
+
+                switch (option)
+                {
+                    case (int)opcoesMenu.Projeto:
+                        chooseProject();
+                        break;
+                    case (int)opcoesMenu.ListaDeExercicios:
+                        chooseList();
+                        break;
+                    case (int)opcoesMenu.Sair:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida!");
+                        break;
+                }
+            }
+        }
+
+        private static void PrintMenu()
+        {
+            Console.Clear();
 
             Console.WriteLine("Quer ver projeto ou lista de exercícios?");
             Console.WriteLine("1 - Projeto");
             Console.WriteLine("2 - Lista de exercícios");
-
-            switch (int.Parse(Console.ReadLine()))
-            {
-                case 1:
-                    chooseProject();
-                    break;
-                case 2:
-                    chooseList();
-                    break;
-                default:
-                    break;
-            }
+            Console.WriteLine("3 - Sair");
         }
 
         private static void chooseProject()
@@ -40,6 +62,7 @@ namespace lista_de_exercicios
             Console.WriteLine("Escolha o número do projeto que deseja executar: ");
             Console.WriteLine("1 - Projeto 1: Calculadora");
             Console.WriteLine("2 - Projeto 2: Gestor de clientes CMD");
+            Console.WriteLine("3 - Projeto 3: Gestor de estoque CMD");
 
             switch (int.Parse(Console.ReadLine()))
             {
@@ -50,6 +73,10 @@ namespace lista_de_exercicios
                 case 2:
                     Project02 project02 = new Project02();
                     project02.Menu();
+                    break;
+                case 3:
+                    Project03 project03 = new Project03();
+                    project03.Menu();
                     break;
                 default:
                     break;

@@ -13,6 +13,15 @@ namespace lista_de_exercicios.Model.Project
 {
     internal class Project02 : Interface.IProject
     {
+        enum opcoesMenu
+        {
+            CadastrarCliente = 1,
+            ListarClientes = 2,
+            EditarCliente = 3,
+            ExcluirCliente = 4,
+            Sair = 5
+        }
+
         public string projectDbFolder = "project02DB";
         public string testProjectFile = "testeProject02.txt";
         public string projectDbFileBinary = "project02Clients.dat";
@@ -25,42 +34,45 @@ namespace lista_de_exercicios.Model.Project
             int option=-1;
             LoadClientFromDb();
 
-
-
-            while (option!=5)
+        
+            while (option != 0)
             {
-                Console.WriteLine("Sistema do cliente");
-                Console.WriteLine("1 - Cadastrar cliente");
-                Console.WriteLine("2 - Listar clientes");
-                Console.WriteLine("4 - Excluir cliente");
-                Console.WriteLine("5 - Sair");
+                PrintMenuOptions();
 
                 option = int.Parse(Console.ReadLine());
+
                 switch (option)
                 {
-                    case 1:
+                    case (int)opcoesMenu.CadastrarCliente:
                         AddClient();
                         break;
-                    case 2:
+                    case (int)opcoesMenu.ListarClientes:
                         ListClients();
                         break;
-                    case 3:
+                    case (int)opcoesMenu.ExcluirCliente:
                         break;
-                    case 4:
-                        break;
-                    case 5:
-                        SaveClientToDb();
-                        break;
+                    case (int)opcoesMenu.Sair:
+                        return option;
                     default:
                         Console.WriteLine("Opção inválida!");
                         break;
                 }
-                Console.ReadKey();
-                Console.Clear();
+
             }
            
 
             return option;
+        }
+
+        public void PrintMenuOptions()
+        {
+            Console.Clear();
+
+            Console.WriteLine("Sistema do cliente");
+            Console.WriteLine("1 - Cadastrar cliente");
+            Console.WriteLine("2 - Listar clientes");
+            Console.WriteLine("4 - Excluir cliente");
+            Console.WriteLine("5 - Sair");
         }
 
         private void AddClient()
@@ -171,5 +183,7 @@ namespace lista_de_exercicios.Model.Project
                  }
             }
         }
+
+
     }
 }

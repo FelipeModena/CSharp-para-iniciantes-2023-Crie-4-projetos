@@ -9,6 +9,7 @@ namespace lista_de_exercicios.Interface
     internal interface IProject
     {
         int Menu();
+        void PrintMenuOptions();
     }
 
     internal interface IProject1 : IProject
