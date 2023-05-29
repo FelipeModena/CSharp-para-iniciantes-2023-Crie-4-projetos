@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Interface\Repository\Project03\IProduto.repository.cs" />
     <Compile Include="Interface\Repository\Project03\IProdutoFisico.repository.cs" />
+    <Compile Include="Jobs\Http\ProjectJson.cs" />
+    <Compile Include="Model\Http\Todos.cs" />
     <Compile Include="Model\List\List2Model.cs" />
     <Compile Include="Model\List\List3Model.cs" />
     <Compile Include="Model\List\List1Model.cs" />

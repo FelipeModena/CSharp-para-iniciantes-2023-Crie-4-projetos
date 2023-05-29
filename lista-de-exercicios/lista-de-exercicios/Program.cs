@@ -1,4 +1,5 @@
-﻿using lista_de_exercicios.Lists;
+﻿using lista_de_exercicios.Jobs.Project;
+using lista_de_exercicios.Lists;
 using lista_de_exercicios.Model;
 using lista_de_exercicios.Model.List;
 using lista_de_exercicios.Model.Project;
@@ -17,14 +18,15 @@ namespace lista_de_exercicios
         {
             Projeto = 1,
             ListaDeExercicios = 2,
-            Sair = 3
+            HttpJson = 3,
+            Sair = 4
         }
         static void Main(string[] args)
         {
             int option;
             while (true)
             {
-                
+
                 PrintMenu();
                 option = int.Parse(Console.ReadLine());
 
@@ -35,6 +37,9 @@ namespace lista_de_exercicios
                         break;
                     case (int)opcoesMenu.ListaDeExercicios:
                         chooseList();
+                        break;
+                    case (int)opcoesMenu.HttpJson:
+                        ProjectJson projectJson = new ProjectJson();
                         break;
                     case (int)opcoesMenu.Sair:
                         Environment.Exit(0);
@@ -53,7 +58,8 @@ namespace lista_de_exercicios
             Console.WriteLine("Quer ver projeto ou lista de exercícios?");
             Console.WriteLine("1 - Projeto");
             Console.WriteLine("2 - Lista de exercícios");
-            Console.WriteLine("3 - Sair");
+            Console.WriteLine("3 - Http - Json");
+            Console.WriteLine("4 - Sair");
         }
 
         private static void chooseProject()
