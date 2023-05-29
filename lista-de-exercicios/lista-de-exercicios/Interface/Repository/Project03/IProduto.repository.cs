@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lista_de_exercicios.Entity.List
+namespace lista_de_exercicios.Interface.Repository.Project03
 {
-    internal class List1Entity
+    internal interface IProdutoRepository<T> 
     {
+        T Create();
     }
 }

@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lista_de_exercicios.Entity.List
+{
+    internal class List2Model
+    {
+        public class Item
+        {
+            public string Name { get; set; }
+            public double Value { get; set; }
+        }
+    }
+
+}

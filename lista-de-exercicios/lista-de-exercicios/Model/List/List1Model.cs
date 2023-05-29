@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace lista_de_exercicios.Entity.List
 {
-    internal class List3Entity
+    internal class List1Model
     {
-        public class Aluno
-        {
-            public string Name { get; set; }
-        }
     }
 }

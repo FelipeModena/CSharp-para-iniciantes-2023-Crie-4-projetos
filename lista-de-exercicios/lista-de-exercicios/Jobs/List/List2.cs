@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static lista_de_exercicios.Entity.List.List2Entity;
+using static lista_de_exercicios.Entity.List.List2Model;
 
 namespace lista_de_exercicios.Lists
 {

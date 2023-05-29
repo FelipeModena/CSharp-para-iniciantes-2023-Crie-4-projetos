@@ -43,24 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entity\List\List2Entity.cs" />
-    <Compile Include="Entity\List\List3Entity.cs" />
-    <Compile Include="Entity\List\List1Entity.cs" />
-    <Compile Include="Entity\Project\Project02Entity.cs" />
+    <Compile Include="Interface\Repository\Project03\IProduto.repository.cs" />
+    <Compile Include="Interface\Repository\Project03\IProdutoFisico.repository.cs" />
+    <Compile Include="Model\List\List2Model.cs" />
+    <Compile Include="Model\List\List3Model.cs" />
+    <Compile Include="Model\List\List1Model.cs" />
+    <Compile Include="Model\Project\Project02Entity.cs" />
+    <Compile Include="Model\Project\Project03\CursoModel.cs" />
+    <Compile Include="Model\Project\Project03\EbookModel.cs" />
+    <Compile Include="Model\Project\Project03\ProductModel.cs" />
+    <Compile Include="Model\Project\Project03\ProdutoFisicoModel.cs" />
     <Compile Include="Interface\IList.cs" />
     <Compile Include="Interface\IProject.cs" />
-    <Compile Include="Model\List\AbstratactionList.cs" />
-    <Compile Include="Model\List\List1.cs" />
-    <Compile Include="Model\List\List2.cs" />
-    <Compile Include="Model\List\List3.cs" />
-    <Compile Include="Model\Project\Project01.cs" />
-    <Compile Include="Model\Project\Project02.cs" />
-    <Compile Include="Model\Project\Project03.cs" />
+    <Compile Include="Interface\Model\Project03\IEstoque.cs" />
+    <Compile Include="Jobs\List\AbstratactionList.cs" />
+    <Compile Include="Jobs\List\List1.cs" />
+    <Compile Include="Jobs\List\List2.cs" />
+    <Compile Include="Jobs\List\List3.cs" />
+    <Compile Include="Jobs\Project\Project01.cs" />
+    <Compile Include="Jobs\Project\Project02.cs" />
+    <Compile Include="Jobs\Project\Project03.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Entity\ProdutoEntity.entity.cs" />
+    <Compile Include="Repository\Project\Project03\ProdutoFisicoRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="Repository\Entity\ProdutoFisico.entity.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

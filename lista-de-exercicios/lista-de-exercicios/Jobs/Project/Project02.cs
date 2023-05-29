@@ -13,7 +13,7 @@ namespace lista_de_exercicios.Model.Project
 {
     internal class Project02 : Interface.IProject
     {
-        enum opcoesMenu
+        enum OpcoesMenu
         {
             CadastrarCliente = 1,
             ListarClientes = 2,
@@ -22,10 +22,10 @@ namespace lista_de_exercicios.Model.Project
             Sair = 5
         }
 
-        public string projectDbFolder = "project02DB";
-        public string testProjectFile = "testeProject02.txt";
-        public string projectDbFileBinary = "project02Clients.dat";
-        ArrayList testFunctionsOrder = new ArrayList() { "1", "2", 2,2,5 };
+        private readonly string projectDbFolder = "project02DB";
+        private readonly string testProjectFile = "testeProject02.txt";
+        private readonly string projectDbFileBinary = "project02Clients.dat";
+        readonly ArrayList testFunctionsOrder = new ArrayList() { "1", "2", 2, 2, 5 };
 
         public List<Client> clients = new List<Client>();
 
@@ -43,15 +43,15 @@ namespace lista_de_exercicios.Model.Project
 
                 switch (option)
                 {
-                    case (int)opcoesMenu.CadastrarCliente:
+                    case (int)OpcoesMenu.CadastrarCliente:
                         AddClient();
                         break;
-                    case (int)opcoesMenu.ListarClientes:
+                    case (int)OpcoesMenu.ListarClientes:
                         ListClients();
                         break;
-                    case (int)opcoesMenu.ExcluirCliente:
+                    case (int)OpcoesMenu.ExcluirCliente:
                         break;
-                    case (int)opcoesMenu.Sair:
+                    case (int)OpcoesMenu.Sair:
                         return option;
                     default:
                         Console.WriteLine("Opção inválida!");
@@ -77,9 +77,11 @@ namespace lista_de_exercicios.Model.Project
 
         private void AddClient()
         {
-            Client client = new Client();
-            client.name = "Cliente";
-            client.cpf = "123456789";
+            Client client = new Client
+            {
+                name = "Cliente",
+                cpf = "123456789"
+            };
 
             Console.WriteLine("Digite o nome do cliente: ");
             //client.name = Console.ReadLine();

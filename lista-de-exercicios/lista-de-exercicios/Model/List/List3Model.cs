@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace lista_de_exercicios.Entity.List
 {
-    internal class List2Entity
+    internal class List3Model
     {
-        public class Item
+        public class Aluno
         {
             public string Name { get; set; }
-            public double Value { get; set; }
         }
     }
-
 }
