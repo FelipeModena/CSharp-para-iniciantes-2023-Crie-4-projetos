@@ -1,5 +1,4 @@
 ﻿using lista_de_exercicios.Interface.Project03;
-using lista_de_exercicios.Repository.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

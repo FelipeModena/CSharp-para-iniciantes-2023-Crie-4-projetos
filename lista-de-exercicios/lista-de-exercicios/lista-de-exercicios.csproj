@@ -68,12 +68,9 @@
     <Compile Include="Jobs\Project\Project03.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\Entity\ProdutoEntity.entity.cs" />
-    <Compile Include="Repository\Project\Project03\ProdutoFisicoRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <Compile Include="Repository\Entity\ProdutoFisico.entity.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
